@@ -1,0 +1,575 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+  vertical-align: baseline;
+
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  
+}
+ol, ul {
+  list-style: none;
+  padding-bottom: 20px;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Globalne style tekstu */
+
+body{
+     font-family: 'Rubik', sans-serif;
+  
+    line-height: 1.7;
+}
+
+p{
+    margin-top: 6px;
+}
+
+h1,h2,h3,h4, label{
+    color:#45474f;
+}
+
+h1{
+    font-size:54px;
+    line-height: 1.2;
+}
+
+h2{
+    font-size:25px;
+    text-transform: uppercase;
+}
+
+h4,strong
+{
+    font-weight: 500;
+}
+
+h3{
+    font-size: 18px;
+    font-weight: lighter;
+    text-transform: uppercase;
+}
+
+h5{
+  font-size:15px;
+  text-transform: uppercase;
+  color:grey;
+  padding-bottom: 15px;
+  
+  
+}
+
+
+/*kolumny kontenery, sekcje */
+
+
+
+section{
+    clear:both;
+    
+}
+
+.row
+{
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+#login
+{
+    padding: 180px 0;
+}
+
+.nopadding {
+    padding: 0 !important;
+    margin: 0 !important;
+ }
+
+
+ /* The side navigation menu */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 70px; /* 0 width - change this with JavaScript */
+    position: fixed;
+    z-index: 1; /* Stay on top */
+    top: 58px; /* Stay at the top */
+    left: 0;
+    /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+ 
+   
+  }
+  
+
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 0px 0px 30px 18px;
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: inline-flex;
+    transition: 0.3s;
+  }
+  
+.sidenav span{
+  margin-left: 20px;
+  display: flex;
+  overflow: hidden;
+}
+
+
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: flex;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 150px;
+  }
+  
+  
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+
+
+  #calendar_div {
+    
+    width: 100%;
+    padding:0 0 0 0;
+    
+  }
+
+  
+  .Dania {
+ 
+    height: 31%;  
+    width: 100%;
+    margin-top: 28px;
+    background-color: white;
+    
+  }
+
+  
+ .left-side
+ {
+
+  height: 85%;  
+  width: 100%;
+
+  
+ }
+
+
+ .home
+ {
+    padding: 40px 90px 10px 140px ;
+    height: 90%;
+ }
+
+
+.kalendarz {
+  background-color: white;
+  border-radius: 0;
+  width: 100%;
+  height:62%;
+  color: #040605;
+  padding: 7 20 5 20;
+}
+
+.data_menu__
+{
+  padding: 10;
+  text-transform: uppercase;
+  font-size: 30px;
+font-weight: 500;
+color:#dc3545!important;
+}
+
+.data_menu___
+{
+  padding: 0 0 25 0; 
+  color:gray;
+  text-transform: uppercase;
+  font-size: 16px;
+  text-align: center;
+}
+
+.data-tytul {
+
+  width: 100%;
+  display: table;
+  text-align: center;
+}
+
+.data-tytul:after {
+  display: table;
+  clear: both;
+}
+
+.poprzedni-miesiac{
+  position: relative;
+  float: left;
+  text-align: left;
+  cursor: pointer;
+  width: 22px;
+  height: 30px;
+}
+.poprzedni-miesiac:after {
+    content: "";
+    display: inline;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    
+    left: 20px;
+    top: 34px;
+    
+    border-top: 1.5px solid black;
+    border-right: 1.5px solid black;
+    -webkit-transform: rotate(224deg);
+    transform: rotate(224deg);
+}
+.nastepny-miesiac{
+  position: relative;
+  float: right;
+  text-align: right;
+  cursor: pointer;
+  width: 22px;
+  height: 30px;
+}
+.nastepny-miesiac:after {
+    content: "";
+    display: inline;
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    
+    right: 20px;
+    top: -40px;
+    
+    border-top: 1.5px solid black;
+    border-right: 1.5px solid black;
+    -webkit-transform: rotate(44deg);
+    transform: rotate(44deg);
+}
+.data-tytul__year {
+  display: block;
+  position: relative;
+  float: right;
+  font-size: 1rem;
+  line-height: 30px;
+  width: 47%;
+ 
+  text-align: right;
+  
+  
+  
+}
+.data-tytul__year2 {
+    display: block;
+  position: relative;
+  float: left;
+  font-size: 1rem;
+  line-height: 3px;
+  width: 4%;
+
+  text-align: left;
+  }
+.data-tytul__year select{
+ 
+  font-size: 16px;
+}
+@media screen and (min-width: 55em) {
+  .data-tytul__year {
+    width: 47%;
+  }
+}
+
+.data-tytul__month {
+  position: relative;
+  float: left;
+  font-size: 1rem;
+  line-height: 30px;
+  width: 47%;
+ 
+  text-align: center;
+}
+.data-tytul__month select{
+  padding: 2px 6px;
+  font-size: 16px;
+}
+
+.menu__lewe {
+  width: 100%;
+  padding: 30 50 40 50;
+  color: #040605;
+  
+}
+
+
+.menu__prawe {
+  width: 100%;
+  padding: 20 50 40 50;
+  color: #040605;
+  
+}
+
+.sidebar__list {
+  list-style: none;  
+}
+
+.sidebar__list-item {
+  
+  color: #2d4338;
+  font-weight: 100;
+  font-size: 19px;
+  padding: 0 0 0 0;
+ 
+}
+
+.list-item__time {
+  display: inline-block;
+}
+
+.sidebar__list-item--complete {
+  color:#dc3545!important;
+ font-weight: 700;
+}
+.sidebar__list-item--complete .list-item__time {
+  color: rgba(4, 6, 5, 0.3);
+}
+
+.calendar__heading-highlight {
+  color: #2d444a;
+  font-weight: 900;
+}
+
+.dni_tygodnia {
+ 
+  display: inline-table;
+  width: 100%;  
+  text-align: center;
+  font-size: 20px;
+  padding: 0 30 0 30;
+  
+  
+}
+
+.dni_tytul {
+  
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 32px;
+          flex: 32px 0 0;
+}
+
+.dzien {
+  
+  width: 100%;
+  padding: 0 0 5 0;
+  color: black;
+  font-weight: 500;
+  font-size:24px;
+  text-transform: uppercase;
+}
+
+.kalendarz_tydzien {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-flex: 1;
+  flex: 1 1 0;
+ 
+}
+
+.kalendarz_dzien {
+  width: 100%;
+  height: 35px;
+   padding: 0 0 45 0;
+
+}
+
+.kalendarz_dzien.wybrane .kalendarz_data, .kalendarz_dzien.wybrane .kalendarz_dania{
+  color: white ;
+ 
+  background-color: #ffa600;
+  border-radius: 0%;
+  padding: 5 5 5 5;
+}
+
+.kalendarz_data {
+  color: #696969;
+  font-weight: 400;
+  
+}
+
+
+.kalendarz_tydzien .nieaktywny .kalendarz_data,
+.kalendarz_tydzien .nieaktywny .task-count {
+  color: #c6c6c6;
+}
+.kalendarz_tydzien .dzis .kalendarz_data {
+  color: white;
+  font-weight: 300;
+  background-color: #dc3545;
+  border-radius: 50%;
+  padding: 5 5 5 5;
+  
+}
+
+.kalendarz_dania {
+  color: #040605;
+  display: -webkit-box;
+  display: flex;
+  font-size: 0.8rem;
+}
+@media screen and (min-width: 55em) {
+  .kalendarz_dania {
+    font-size: 1rem;
+  }
+}
+.kalendarz_dania.kalendarz_dania--dzis {
+  color: #fd588a;
+}
+
+/* Popup Open button */ 
+.open-button{
+  border:none;  
+  padding:10px;
+	padding-left: 3rem;
+	padding-right: 3rem;
+  background-color: #a7a7a7;
+  color:white;
+  border-radius:28px;
+}
+ 
+.open-button:hover{
+  background-color: #dc3545;
+}
+ 
+.popup {
+    position:fixed;
+    top:0px;
+    left:0px;
+    background:rgba(0,0,0,0.75);
+    width:100%;
+    height:100%;
+    display:none;
+}
+ 
+/* Popup inner div */
+.popup-content {
+    width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 40px;
+    margin-top: 100px;
+    box-shadow: 0px 2px 6px rgba(0,0,0,1);
+    border-radius: 3px;
+    background: #fff;
+    position: relative;
+}
+ 
+/* Popup close button */
+.close-button {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    border-radius: 20px;
+    background: rgba(0,0,0,0.8);
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    text-decoration:none;
+}
+ 
+.close-button:hover {
+    background: rgba(0,0,0,1);
+}
+ 
+@media screen and (max-width: 720px) {
+.popup-content {
+    width:90%;
+    } 
+}
+
+
+.Jadlospis
+{
+  background-color: white;
+  height: auto;
+}
+
+.card-header{
+ 
+  font-size: 18px;
+  font-weight: lighter;
+  text-transform: uppercase;
+  color:white;
+}
+
+
+body
+{
+  background-image: url(img/3.jpg);
+	background-size: cover;
+  
+}
+
+#login
+{
+    padding: 180px 0;
+   
+}
+
